@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 * {
   box-sizing: border-box;
@@ -16,10 +16,31 @@ body {
 .top {
   text-align: center;
   padding: 40px;
+  color: #fff;
+  background-image: url(/porto.jpeg);
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+}
+
+.top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 .top h1 {
   font-size: 3rem;
+  font-weight: 700;
+  z-index: 2;
 }
 
 .container-cards {
@@ -61,9 +82,9 @@ body {
 
 .card p {
   font-family: inherit;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   padding-top: 16px;
 }
 
@@ -72,6 +93,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  font-size: 0.75rem;
+  padding: 16px 0 8px 0;
   width: 100%;
+}
+
+.card .control h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  background-color: #f7756b;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
