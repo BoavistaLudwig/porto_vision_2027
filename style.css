@@ -1,10 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   display: block;
   font-family: roboto;
   height: 100vh;
   width: 100%;
+  background-color: #ea685e;
+}
+
+.top {
+  text-align: center;
+  padding: 40px;
+}
+
+.top h1 {
+  font-size: 3rem;
 }
 
 .container-cards {
@@ -15,7 +30,6 @@ body {
   margin: 0 auto;
   max-width: 100%;
   padding: 40px;
-  background-color: salmon;
   gap: 24px;
 }
 
@@ -28,7 +42,8 @@ body {
   max-width: 350px;
   padding: 16px;
   background-color: #fff;
-  border-radius: 10px;
+  /*  border-radius: 8px; */
+  border: 8px solid #f7756b;
 }
 
 .card > img {
@@ -41,6 +56,7 @@ body {
 .card h1 {
   font-size: 2rem;
   font-weight: bold;
+  padding-bottom: 8px;
 }
 
 .card p {
@@ -48,4 +64,14 @@ body {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5rem;
+  padding-top: 16px;
+}
+
+.card .control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  width: 100%;
 }
