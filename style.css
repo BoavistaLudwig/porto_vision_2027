@@ -30,11 +30,14 @@ body {
 
 .top-container {
   background-color: #fff;
-  width: 350px;
+  width: 400px;
+  height: 400px;
   display: flex;
-  opacity: 0.9;
-  margin: -80px 0 -40px 0;
+  margin: -200px 0 -40px 0;
+  border-radius: 50%;
   z-index: 2;
+  align-items: center;
+  border: 8px solid var(--main-light-color);
 }
 
 .text {
@@ -45,16 +48,15 @@ body {
 
 .text h1 {
   font-size: 3rem;
+  padding: 16px 0;
 }
 
 .text h2 {
   font-size: 1.5rem;
-  padding: 8px 0;
 }
 
 .text p {
   line-height: 1.25rem;
-  padding: 8px;
 }
 
 .top h1 {
@@ -96,9 +98,10 @@ body {
 
 .card h1 {
   font-size: 2rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
+  /*   letter-spacing: 0.1rem; */
+  font-weight: 100;
   padding-bottom: 8px;
+  text-align: center;
 }
 
 .card p {
