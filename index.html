@@ -13,6 +13,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Porto Vision 2027</title>
+    <script>
+      $(function () {
+        $(".video").append(
+          '<stream id="rebase-video" style="pointer-events:none" src="430dc5a094552c5cfe94596b04520487" preload autoplay loop mute></stream><script data-cfasync="false" defer type="text/javascript" src="https://embed.videodelivery.net/embed/r4xu.fla9.latest.js?video=430dc5a094552c5cfe94596b04520487">' +
+            decodeURI("%3C/script%3E")
+        );
+      });
+    </script>
   </head>
   <body>
     <div class="top-section">
@@ -44,10 +52,10 @@
           local job offers & remote workers choosing Porto as base.
         </p>
         <div class="control">
-          <h2 class="like">
-            <span><i class="fa-solid fa-heart"></i></span>Like
+          <h2 class="like" id="like">
+            <span><i class="fa-solid fa-heart" id="heart"></i></span>Like
           </h2>
-          <h2 class="share">
+          <h2 class="share" id="share">
             <span><i class="fa-solid fa-share"></i></span>Share
           </h2>
         </div>

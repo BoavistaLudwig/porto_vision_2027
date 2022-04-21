@@ -20,15 +20,18 @@ body {
 }
 
 .top-section {
-  display: block;
-  height: 340px;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  min-height: 340px;
   width: 100%;
 }
 
 video {
   height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 .top-container {
@@ -60,12 +63,7 @@ video {
 
 .text p {
   line-height: 1.25rem;
-}
-
-.top h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  z-index: 2;
+  padding: 0 8px;
 }
 
 .container-cards {
@@ -101,7 +99,6 @@ video {
 
 .card h1 {
   font-size: 2rem;
-  /*   letter-spacing: 0.1rem; */
   font-weight: 100;
   padding-bottom: 8px;
   text-align: center;
@@ -120,14 +117,27 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   font-size: 0.75rem;
   padding: 16px 0 8px 0;
   width: 100%;
 }
 
-.card .control h2 span {
-  padding-right: 6px;
+#like {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.liked {
+  color: red;
+}
+
+#share {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+#share:hover {
+  color: rgba(213, 48, 48, 0.8);
 }
 
 .card .control h2:hover {
@@ -135,14 +145,20 @@ video {
   text-decoration: underline;
 }
 
+.card .control h2 span {
+  padding-right: 6px;
+}
+
 .footer {
   display: block;
   width: 100%;
-  text-align: center;
   padding: 20px;
   background-color: var(--main-light-color);
+
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 0.75rem;
-  font-weight: lighter;
   letter-spacing: 0.75px;
+  font-weight: 100;
+  text-align: center;
 }
