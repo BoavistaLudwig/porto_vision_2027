@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
 
 :root {
   --main-color: #0e1f6c;
@@ -53,7 +53,7 @@ video {
 }
 
 .text h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   padding: 16px 0;
 }
 
@@ -136,7 +136,8 @@ video {
   cursor: pointer;
 }
 
-#share:hover {
+#share:hover,
+#like:hover {
   color: rgba(213, 48, 48, 0.8);
 }
 
@@ -155,10 +156,13 @@ video {
   padding: 20px;
   background-color: var(--main-light-color);
 
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   color: #fff;
-  font-size: 0.75rem;
-  letter-spacing: 0.75px;
+  font-size: 1rem;
   font-weight: 100;
   text-align: center;
+}
+
+.footer h3 {
+  font-weight: 100;
 }
