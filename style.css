@@ -140,9 +140,17 @@ video {
   cursor: pointer;
 }
 
-#share:hover,
 #like:hover {
   color: rgba(213, 48, 48, 0.8);
+}
+
+.card .control h2 span a:visited {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#share:hover,
+.card .control h2 span a:hover {
+  color: #1da1f2;
 }
 
 .card .control h2:hover {
@@ -152,6 +160,11 @@ video {
 
 .card .control h2 span {
   padding-right: 6px;
+}
+
+.card .control h2 span a {
+  text-decoration: none;
+  padding-left: 6px;
 }
 
 .footer {
