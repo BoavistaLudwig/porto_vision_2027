@@ -21,13 +21,14 @@ body {
 
 .top-section {
   display: flex;
-  min-height: 340px;
+  height: 50vh;
   width: 100%;
 }
 
 video {
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -70,9 +71,12 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
-  max-width: 100%;
+
+  width: 100%;
+  height: 100%;
+
   padding-top: 100px;
   padding-bottom: 40px;
   gap: 24px;
@@ -81,9 +85,9 @@ video {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
   max-width: 350px;
   padding: 16px;
   background-color: #fff;
