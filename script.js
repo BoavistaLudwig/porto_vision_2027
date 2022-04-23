@@ -1,5 +1,5 @@
-const like = document.getElementById("like");
+const likes = document.querySelectorAll(".like");
 
-like.addEventListener("click", function () {
-  like.classList.toggle("liked");
+likes.forEach((like, idx) => {
+  like.addEventListener("click", () => like.classList.toggle("liked"));
 });
