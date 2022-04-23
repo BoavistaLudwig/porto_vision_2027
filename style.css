@@ -3,6 +3,7 @@
 :root {
   --main-color: #0e1f6c;
   --main-light-color: #253683;
+  --text-black400: rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -126,8 +127,8 @@ video {
   width: 100%;
 }
 
-#like {
-  color: rgba(0, 0, 0, 0.8);
+.like {
+  color: var(--text-black400);
   cursor: pointer;
 }
 
@@ -136,7 +137,7 @@ video {
 }
 
 #share {
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-black400);
   cursor: pointer;
 }
 
@@ -144,16 +145,18 @@ video {
   color: rgba(213, 48, 48, 0.8);
 }
 
-.card .control h2 span a {
-  color: rgba(0, 0, 0, 0.8);
+#share a {
+  text-decoration: none;
+  color: var(--text-black400);
 }
 
-.card .control h2 span a:visited {
-  color: rgba(0, 0, 0, 0.8);
+#share a:visited {
+  color: var(--text-black400);
 }
 
 #share:hover,
-.card .control h2 span a:hover {
+#share a:hover,
+#share i:hover {
   color: #1da1f2;
 }
 
@@ -162,13 +165,8 @@ video {
   text-decoration: underline;
 }
 
-.card .control h2 span {
+.card .control i {
   padding-right: 6px;
-}
-
-.card .control h2 span a {
-  text-decoration: none;
-  padding-left: 6px;
 }
 
 .footer {
