@@ -45,6 +45,10 @@
       gtag("js", new Date());
       gtag("config", "G-DJX86LG6HN");
     </script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -76,25 +80,187 @@
   <body>
     <div class="top-section">
       <video autoplay muted loop playsinline src="src/porto2.mp4"></video>
-    </div>
-    <div class="top-container">
       <div class="text">
         <h2>Porto Vision 2027</h2>
         <h1>Vision Board</h1>
         <p>Porto is a jewel in the making and here are our wishes for 2027.</p>
       </div>
     </div>
+
     <div class="container-cards">
       <div class="card">
-        <h1>New Jobs</h1>
-        <img
-          src="https://c.tenor.com/6SE-euK9D-4AAAAC/office-space.gif"
-          alt="gif with dog working from bed"
-        />
-        <p>
-          Aim at <b>50.000</b> additional (!) tech workers in Porto through
-          local job offers & remote workers choosing Porto as base.
-        </p>
+        <div class="content">
+          <h1>New Jobs</h1>
+          <img
+            src="https://c.tenor.com/6SE-euK9D-4AAAAC/office-space.gif"
+            alt="gif with dog working from bed"
+          />
+          <p>
+            Aim at <b>50.000</b> additional (!) tech workers in Porto through
+            local job offers & remote workers choosing Porto as base.
+          </p>
+        </div>
+        <div class="control">
+          <h2 class="like" id="like">
+            <i class="fa-solid fa-heart" id="heart"></i>Like
+          </h2>
+          <h2 class="share" id="share">
+            <i class="fa-brands fa-twitter"></i
+            ><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
+              target="_blank"
+              >Tweet</a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>Underground Traffic</h1>
+          <img
+            src="https://c.tenor.com/OY2rsz755yUAAAAd/allan-smith-milleniumforce.gif"
+            alt=""
+          />
+          <p>
+            Build <b>12</b> underground tunnels to reduce traffic on inner-city
+            streets.
+          </p>
+        </div>
+        <div class="control">
+          <h2 class="like" id="like">
+            <i class="fa-solid fa-heart" id="heart"></i>Like
+          </h2>
+          <h2 class="share" id="share">
+            <i class="fa-brands fa-twitter"></i
+            ><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
+              target="_blank"
+              >Tweet</a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>Crypto City Coin</h1>
+          <img
+            src="https://c.tenor.com/1zdVMb6AbeAAAAAC/bitcoin-blockchain.gif"
+            alt=""
+          />
+          <p>
+            Launch a crypto city coin that is connected to tax-paid
+            infrastructures + new innovative programs, to let every local
+            participate on the success of the region, the rise of the coin, and
+            the inevitable massive gentrification.
+          </p>
+        </div>
+        <div class="control">
+          <h2 class="like" id="like">
+            <i class="fa-solid fa-heart" id="heart"></i>Like
+          </h2>
+          <h2 class="share" id="share">
+            <i class="fa-brands fa-twitter"></i
+            ><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
+              target="_blank"
+              >Tweet</a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>Office Spaces</h1>
+          <img
+            src="https://c.tenor.com/sjyJce696-UAAAAC/peace-laptop.gif"
+            alt=""
+          />
+          <p>
+            Incentivize the establishment of <b>20.000</b> co-working desks to
+            fully benefit from Portugal's (Porto's) top ratings as a remote work
+            destination.
+          </p>
+        </div>
+        <div class="control">
+          <h2 class="like" id="like">
+            <i class="fa-solid fa-heart" id="heart"></i>Like
+          </h2>
+          <h2 class="share" id="share">
+            <i class="fa-brands fa-twitter"></i
+            ><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
+              target="_blank"
+              >Tweet</a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>Mobility</h1>
+          <img
+            src="https://c.tenor.com/VrIlSYx3T4MAAAAd/aladdin-magic-carpet.gif"
+            alt=""
+          />
+          <p>
+            Incentivize or establish car sharing (via City Coin) to free up
+            parking space and increase mobility.
+          </p>
+        </div>
+        <div class="control">
+          <h2 class="like" id="like">
+            <i class="fa-solid fa-heart" id="heart"></i>Like
+          </h2>
+          <h2 class="share" id="share">
+            <i class="fa-brands fa-twitter"></i
+            ><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
+              target="_blank"
+              >Tweet</a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>Families</h1>
+          <img
+            src="https://c.tenor.com/axGrB93zP5cAAAAC/woah-bundy-family.gif"
+            alt=""
+          />
+          <p>
+            Increase essential offerings for high-income expats with families,
+            like: international kindergarten, elementary schools & child
+            doctors.
+          </p>
+        </div>
+        <div class="control">
+          <h2 class="like" id="like">
+            <i class="fa-solid fa-heart" id="heart"></i>Like
+          </h2>
+          <h2 class="share" id="share">
+            <i class="fa-brands fa-twitter"></i
+            ><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
+              target="_blank"
+              >Tweet</a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>2nd Capital</h1>
+          <img
+            src="https://c.tenor.com/YeWzIkz4w7UAAAAC/no-pot-ser-jordi-baste.gif"
+            alt=""
+          />
+          <p>
+            Develop a Hyperloop train connection (or something as speedy) from
+            Porto to Madrid to make Porto more independent from Lisbon and to
+            have a second European capital to nurture from.
+          </p>
+        </div>
         <div class="control">
           <h2 class="like" id="like">
             <i class="fa-solid fa-heart" id="heart"></i>Like
@@ -111,15 +277,17 @@
       </div>
 
       <div class="card">
-        <h1>Underground Traffic</h1>
-        <img
-          src="https://c.tenor.com/OY2rsz755yUAAAAd/allan-smith-milleniumforce.gif"
-          alt=""
-        />
-        <p>
-          Build <b>12</b> underground tunnels to reduce traffic on inner-city
-          streets.
-        </p>
+        <div class="content">
+          <h1>Rich Culture</h1>
+          <img
+            src="https://c.tenor.com/aIjTBgsbpMMAAAAd/so-salty-salt-bae.gif"
+            alt=""
+          />
+          <p>
+            Incentivice the establishment of rich people experiences like a SOHO
+            Club House and more for high income individuals who enjoy life.
+          </p>
+        </div>
         <div class="control">
           <h2 class="like" id="like">
             <i class="fa-solid fa-heart" id="heart"></i>Like
@@ -135,17 +303,18 @@
         </div>
       </div>
       <div class="card">
-        <h1>Crypto City Coin</h1>
-        <img
-          src="https://c.tenor.com/1zdVMb6AbeAAAAAC/bitcoin-blockchain.gif"
-          alt=""
-        />
-        <p>
-          Launch a crypto city coin that is connected to tax-paid
-          infrastructures + new innovative programs, to let every local
-          participate on the success of the region, the rise of the coin, and
-          the inevitable massive gentrification.
-        </p>
+        <div class="content">
+          <h1>Porto + 212</h1>
+          <img
+            src="https://c.tenor.com/EJo2fz5TbhEAAAAC/boom-barrack-obama.gif"
+            alt=""
+          />
+          <p>
+            Promote Porto in Brazil as a career path to heaven to get local
+            companies the unfair advantage & access to 212.000.000 potential
+            talents.
+          </p>
+        </div>
         <div class="control">
           <h2 class="like" id="like">
             <i class="fa-solid fa-heart" id="heart"></i>Like
@@ -161,113 +330,14 @@
         </div>
       </div>
       <div class="card">
-        <h1>Office Spaces</h1>
-        <img
-          src="https://c.tenor.com/sjyJce696-UAAAAC/peace-laptop.gif"
-          alt=""
-        />
-        <p>
-          Incentivize the establishment of <b>20.000</b> co-working desks to
-          fully benefit from Portugal's (Porto's) top ratings as a remote work
-          destination.
-        </p>
-        <div class="control">
-          <h2 class="like" id="like">
-            <i class="fa-solid fa-heart" id="heart"></i>Like
-          </h2>
-          <h2 class="share" id="share">
-            <i class="fa-brands fa-twitter"></i
-            ><a
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
-              target="_blank"
-              >Tweet</a
-            >
-          </h2>
+        <div class="content">
+          <h1>Clean Streets</h1>
+          <img
+            src="https://c.tenor.com/-PMeSn20CnIAAAAC/jurassic-park-dr-malcolm.gif"
+            alt=""
+          />
+          <p>Incentivice dog owners to clean after their dogs.</p>
         </div>
-      </div>
-      <div class="card">
-        <h1>Mobility</h1>
-        <img
-          src="https://c.tenor.com/VrIlSYx3T4MAAAAd/aladdin-magic-carpet.gif"
-          alt=""
-        />
-        <p>
-          Incentivize or establish car sharing (via City Coin) to free up
-          parking space and increase mobility.
-        </p>
-        <div class="control">
-          <h2 class="like" id="like">
-            <i class="fa-solid fa-heart" id="heart"></i>Like
-          </h2>
-          <h2 class="share" id="share">
-            <i class="fa-brands fa-twitter"></i
-            ><a
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
-              target="_blank"
-              >Tweet</a
-            >
-          </h2>
-        </div>
-      </div>
-      <div class="card">
-        <h1>Families</h1>
-        <img
-          src="https://c.tenor.com/axGrB93zP5cAAAAC/woah-bundy-family.gif"
-          alt=""
-        />
-        <p>
-          Increase essential offerings for high-income expats with families,
-          like: international kindergarten, elementary schools & child doctors.
-        </p>
-        <div class="control">
-          <h2 class="like" id="like">
-            <i class="fa-solid fa-heart" id="heart"></i>Like
-          </h2>
-          <h2 class="share" id="share">
-            <i class="fa-brands fa-twitter"></i
-            ><a
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
-              target="_blank"
-              >Tweet</a
-            >
-          </h2>
-        </div>
-      </div>
-      <div class="card">
-        <h1>2nd Capital</h1>
-        <img
-          src="https://c.tenor.com/YeWzIkz4w7UAAAAC/no-pot-ser-jordi-baste.gif"
-          alt=""
-        />
-        <p>
-          Develop a Hyperloop train connection (or something as speedy) from
-          Porto to Madrid to make Porto more independent from Lisbon and to have
-          a second European capital to nurture from.
-        </p>
-        <div class="control">
-          <h2 class="like" id="like">
-            <i class="fa-solid fa-heart" id="heart"></i>Like
-          </h2>
-          <h2 class="share" id="share">
-            <i class="fa-brands fa-twitter"></i
-            ><a
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
-              target="_blank"
-              >Tweet</a
-            >
-          </h2>
-        </div>
-      </div>
-      <div class="card">
-        <h1>Rich Culture</h1>
-        <img
-          src="https://c.tenor.com/aIjTBgsbpMMAAAAd/so-salty-salt-bae.gif"
-          alt=""
-        />
-        <p>
-          Incentivice the establishment of rich people experiences like a SOHO
-          Club House and more for high income individuals who enjoy life.
-        </p>
         <div class="control">
           <h2 class="like" id="like">
             <i class="fa-solid fa-heart" id="heart"></i>Like
