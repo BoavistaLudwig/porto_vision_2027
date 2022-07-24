@@ -1144,6 +1144,10 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -1170,6 +1174,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:max-w-2xl {
