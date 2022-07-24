@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!--     <meta property="og:title" content="Porto Vision 2027" />
+    <meta property="og:title" content="Porto Vision 2027" />
     <meta
       property="og:url"
-      content="https://boavistaludwig.github.io/porto_vision_2027"
-    />
+      content="https://boavistaludwig.github.io/porto_vision_2027"/>
     <meta
       property="og:image"
-      content="https://c.tenor.com/sjyJce696-UAAAAC/peace-laptop.gif"
-    />
+      content="https://c.tenor.com/sjyJce696-UAAAAC/peace-laptop.gif"/>
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="This is our vision for Porto 2027."
-    />
+      content="This is our vision for Porto 2027."/>
     <meta property="og:locale" content="en_GB" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -26,17 +23,14 @@
     <meta name="twitter:title" content="Vision Porto 2027" />
     <meta
       name="twitter:description"
-      content="This is our vision for Porto 2027"
-    />
+      content="This is our vision for Porto 2027"/>
     <meta
       name="twitter:image"
-      content="https://c.tenor.com/sjyJce696-UAAAAC/peace-laptop.gif"
-    />
-    <-- Global site tag (gtag.js) - Google Analytics -->
-<!--     <script
+      content="https://c.tenor.com/sjyJce696-UAAAAC/peace-laptop.gif"/>
+    <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DJX86LG6HN"
-    ></script>
+      src="https://www.googletagmanager.com/gtag/js?id=G-DJX86LG6HN">
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -44,60 +38,47 @@
       }
       gtag("js", new Date());
       gtag("config", "G-DJX86LG6HN");
-    </script> -->
+    </script>
 
-    <!--     <link rel="stylesheet" href="style.css" /> -->
-    <!--     <link
+      <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="src/apple-touch-icon.png"
-      />
+      href="src/apple-touch-icon.png"/>
       <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="src/favicon-32x32.png"
-      />
+      href="src/favicon-32x32.png"/>
       <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="src/favicon-16x16.png"
-      />
-      <link rel="manifest" href="src/site.webmanifest" /> -->
+      href="src/favicon-16x16.png"/>
+      <link rel="manifest" href="src/site.webmanifest" />
 
       <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+
       <link rel="stylesheet" href="./tailwind/output.css" />
+
     <title>Porto Vision 2027</title>
+
   </head>
-  <body 
-  class="w-full bg-red-500 justify-center">
 
-
-
-
-
-
-
-
-
-
-    <nav class="bg-white shadow w-full">
+  <body>
+    <nav class="shadow w-full">
       <div class="container px-6 py-3 mx-auto md:flex">
         <div class="flex items-center justify-between">
           <div>
             <img class="object-scale-down h-8"
               src="src/logo2.png"
-              ></img
-            >
+              ></img>
           </div>
           <!-- Mobile menu button -->
           <div class="flex md:hidden">
             <button
               type="button"
               class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
-              aria-label="toggle menu"
-            >
+              aria-label="toggle menu">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path
                   fill-rule="evenodd"
@@ -170,17 +151,25 @@
 
 
 
-    <header 
+    <header>
+    <div
     id="Hero"
-    class="relative flex items-center justify-center w-full mb-12 overflow-hidden !h-3/4">
-      <div>
-
-    <div x-init="console.log('I\'m being initialized!')"></div>
+    class="relative flex items-center justify-center w-full overflow-hidden">
+    
+    <video
+      autoplay
+      loop
+      muted
+      class="absolute z-1 w-auto object-cover">
+      <source
+        src="src/porto2.mp4"
+        type="video/mp4"/>
+      Your browser does not support the video tag.
+    </video>
 
    <!-- Profile -->
     <div
-    class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16 z-10 py-16"
-   >
+    class="relative max-w-md mx-auto md:max-w-2xl min-w-0 break-words bg-black w-full mb-6 shadow-lg rounded-xl mt-16 z-10 py-16">
    <div class="px-6">
    <div class="flex flex-wrap justify-center">
      <div class="w-full flex justify-center">
@@ -243,27 +232,15 @@
       </div>
 
 
-      <video
-        autoplay
-        loop
-        muted
-        class="absolute z-1 w-auto object-cover py-16"
-      >
-        <source
-          src="src/porto2.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
 
-      
+    </div>  
     </header>
 
  
 
       <div 
         id="Cards Wrapper"
-        class= "flex flex-row flex-wrap justify-center gap-4 pb-80"
+        class= "flex flex-row flex-wrap justify-center gap-4 pb-80 mx-8"
         x-data="{ cards: [
          { id: 1,
             headline: 'New Jobs',
@@ -318,7 +295,7 @@
         class="flex flex-row flex-wrap justify-center gap-4 pb-40">
         <div 
         id="box"
-        class="card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md text-center">
+        class="card max-w-sm bg-red-500 rounded-lg border border-gray-200 shadow-md text-center">
           <h2 
           class="text-2xl text-slate-700 font-bold leading-normal my-4" 
           x-text="card.headline"></h2>
