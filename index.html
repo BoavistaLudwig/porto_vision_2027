@@ -288,8 +288,8 @@
         ]}">
 
         <template 
-        x-for="card in cards" :key="card.id"
-        class="flex flex-row flex-wrap justify-center gap-4 pb-40">
+        x-for="card in cards" :key="card.id">
+        <div class="flex flex-row flex-wrap justify-center gap-4">
         <div 
         id="box"
         class="card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md text-center">
@@ -306,18 +306,8 @@
           x-text="card.description">
           </p>
         </div>
-        <div class="control flex flex-row justify-between px-4">
-          <h2 class="like" id="like">
-          </h2>
-          <h2 class="share" id="share">
-            ><a
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fboavistaludwig.github.io%2Fporto_vision_2027%2F&text=This%20is%20our%20vision%20for%20Porto%202027&hashtags=Porto"
-              target="_blank"
-              >Tweet</a
-            >
-          </h2>
-        </div>
        </div>
+      </div>
         </template>
       </div>
   
